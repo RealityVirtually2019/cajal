@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a3bdb2cd68f901469e7cc149151eb49, type: 3}
-  m_Name: basic effects
+  m_Name: basic effects 1
   m_EditorClassIdentifier: 
   debugViews:
     m_Enabled: 1
@@ -40,7 +40,7 @@ MonoBehaviour:
         stationaryBlending: 0.95
         motionBlending: 0.85
   ambientOcclusion:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       intensity: 2.47
       radius: 0.3
@@ -71,9 +71,9 @@ MonoBehaviour:
   depthOfField:
     m_Enabled: 0
     m_Settings:
-      focusDistance: 0.84
-      aperture: 26.3
-      focalLength: 51
+      focusDistance: 0.61
+      aperture: 27.5
+      focalLength: 52
       useCameraFov: 0
       kernelSize: 1
   motionBlur:
@@ -322,7 +322,7 @@ MonoBehaviour:
       mode: 0
       color: {r: 0, g: 0, b: 0, a: 1}
       center: {x: 0.5, y: 0.5}
-      intensity: 0.45
+      intensity: 0.753
       smoothness: 0.2
       roundness: 1
       mask: {fileID: 0}
