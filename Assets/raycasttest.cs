@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class raycasttest : MonoBehaviour
 {
+    public Transform controller;
+    public Transform target;
+
     public GameObject revealSphere;
     public Transform revealSpheresParent;
 
@@ -24,22 +27,32 @@ public class raycasttest : MonoBehaviour
     void Update()
     {
         Cursor.visible = true;
-        if (Input.GetMouseButton(0))
-        {
+        //if (Input.GetMouseButton(0))
+        //{
             var layermask = LayerMask.GetMask("Neuron");
-            Ray ray1 = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
+            //Ray ray1 = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
+
+        Ray rayC = new Ray(controller.position, target.position - controller.position);
+
+        GetComponent<LineRenderer>().SetPosition(0, controller.position);
+        GetComponent<LineRenderer>().SetPosition(1,(target.position - controller.position).normalized*100);
+
+        Debug.DrawRay(controller.position, target.position - controller.position, Color.green);
+
             RaycastHit hit;
-            if (Physics.SphereCast(ray1, 0.1f, out hit, maxDistance: Mathf.Infinity, layerMask: layermask))
+            if (Physics.SphereCast(rayC, 0.1f, out hit, maxDistance: Mathf.Infinity, layerMask: layermask))
             {
+                GetComponent<LineRenderer>().SetPosition(1, hit.point);
+
                 Debug.Log(hit.collider.gameObject.name);
                 var hit1Position = hit.point;
                 Debug.Log(hit1Position);
-                Ray ray2 = new Ray(hit.point, -ray1.direction);
+                Ray ray2 = new Ray(hit.point, -rayC.direction);
                 RaycastHit backwardsHit = new RaycastHit();
 
                 for (int i = 0; i < 20; i++)
                 {
-                    ray2 = new Ray(ray2.origin + ray1.direction * backrayStepScale, -ray1.direction);
+                    ray2 = new Ray(ray2.origin + rayC.direction * backrayStepScale, -rayC.direction);
                     bool hitFound = Physics.Raycast(ray2, out backwardsHit, Mathf.Infinity, layerMask: layermask);
                     if (hitFound)
                     {
@@ -72,7 +85,7 @@ public class raycasttest : MonoBehaviour
             //        Debug.Log(newSphere.transform);
             //    }
             //}
-        }
+        //}
     }
 
     void SpawnSphere(Vector3 hit1Position, Vector3 hit2Position)
