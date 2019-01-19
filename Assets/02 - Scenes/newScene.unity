@@ -146,6 +146,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7db14a56f35983f40a83be206e468a78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  target: {fileID: 0}
   revealSphere: {fileID: 1744709222059270, guid: 5a9f62efcaaf63b46827fce13b7cabd9,
     type: 2}
   revealSpheresParent: {fileID: 0}
@@ -11809,7 +11811,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1213891108
 Prefab:
@@ -12454,6 +12456,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a8e6c8ad0725cf14a899bbc581fc6325, type: 2}
+    - target: {fileID: 100000, guid: ccf5858015982544c894a9a2c6ae3630, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ccf5858015982544c894a9a2c6ae3630, type: 3}
   m_IsPrefabAsset: 0
