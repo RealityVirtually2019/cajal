@@ -5,6 +5,10 @@ using System.Linq;
 
 public class CuesDoneCheck : MonoBehaviour {
 
+    public AudioSource Audio;
+    bool audioStarted = false;
+
+
 	// Use this for initialization
 	void Start () {
 		
@@ -14,8 +18,13 @@ public class CuesDoneCheck : MonoBehaviour {
 	void Update () {
 		if (GetComponentsInChildren<cue>().All(c => c.TriggerCompleted))
         {
-            GetComponent<AudioSource>().Play();
-            GetComponent<changeScene>().loadScene = true;
+            if (!audioStarted)
+            {
+                Audio.Play();
+                audioStarted = true;
+
+                GetComponent<changeScene>().loadScene = true;
+            }
         }
 	}
 }
