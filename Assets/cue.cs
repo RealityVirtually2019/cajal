@@ -10,6 +10,13 @@ public class cue : MonoBehaviour {
     public AudioSource Audio;
 
     private bool activated = false;
+    public bool TriggerCompleted
+    {
+        get
+        {
+            return activated;
+        }
+    }
 
 	// Use this for initialization
 	void Start () {
