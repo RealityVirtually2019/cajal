@@ -19,6 +19,7 @@ public class microscopeManager : MonoBehaviour {
         {
             Debug.Log("hola");
             other.transform.root.GetComponent<changeScene>().loadScene = true;
+            GetComponent<AudioSource>().Play(0);
         }
     }
 
