@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/02 - Scenes/newScene.unity
+    path: Assets/02 - Scenes/Intro.unity
+    guid: 2b17f8a767ec54742ad3694f3f72c688
+  - enabled: 1
+    path: Assets/02 - Scenes/intro Letters.unity
+    guid: 2b324c834c392be48a0ed305f10c7409
+  - enabled: 1
+    path: Assets/02 - Scenes/InsideMicroscope.unity
     guid: f81a654d2cf2dcf42a9b7748a1664184
   - enabled: 1
-    path: Assets/02 - Scenes/test martin.unity
+    path: Assets/02 - Scenes/Lab Scene.unity
     guid: 14b5c4641d2e1ad4ea36d3180719d2ff
   m_configObjects: {}
