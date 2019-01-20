@@ -161,7 +161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeCube: {fileID: 305675186}
   fadeTime: 5
-  sceneToLoad: intro Letters
+  sceneToLoad: Intro Brain 2
   loadScene: 0
   prevloadScene: 0
 --- !u!20 &42794042
