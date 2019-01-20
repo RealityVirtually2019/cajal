@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/02 - Scenes/intro Letters.unity
     guid: 2b324c834c392be48a0ed305f10c7409
   - enabled: 1
-    path: Assets/02 - Scenes/InsideMicroscope.unity
+    path: Assets/02 - Scenes/Test/InsideMicroscope.unity
     guid: f81a654d2cf2dcf42a9b7748a1664184
   - enabled: 1
     path: Assets/02 - Scenes/Lab Scene.unity
@@ -24,6 +24,12 @@ EditorBuildSettings:
     path: Assets/02 - Scenes/intro Letters 2.unity
     guid: a934aa4a5ea808a46b814c22f1aacfd4
   - enabled: 1
-    path: Assets/02 - Scenes/InsideMicroscope one.unity
+    path: Assets/02 - Scenes/Test/InsideMicroscope one.unity
     guid: 199d7065464f4244bbf4a37cf4cb268e
+  - enabled: 1
+    path: Assets/02 - Scenes/Inside Microscope.unity
+    guid: 632cfdf282c40de4fb5ed9acb5a3388c
+  - enabled: 1
+    path: Assets/02 - Scenes/out Brain.unity
+    guid: 9b22f85e9991d0d4584d1f381ee5092c
   m_configObjects: {}
