@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/02 - Scenes/Lab Scene.unity
     guid: 14b5c4641d2e1ad4ea36d3180719d2ff
+  - enabled: 1
+    path: Assets/02 - Scenes/Intro Brain.unity
+    guid: 2d728004585b5c44bb7bb8745e6704ba
+  - enabled: 1
+    path: Assets/02 - Scenes/intro Letters 2.unity
+    guid: a934aa4a5ea808a46b814c22f1aacfd4
+  - enabled: 1
+    path: Assets/02 - Scenes/InsideMicroscope one.unity
+    guid: 199d7065464f4244bbf4a37cf4cb268e
   m_configObjects: {}

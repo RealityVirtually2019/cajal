@@ -3649,7 +3649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeCube: {fileID: 1571032640}
   fadeTime: 2
-  sceneToLoad: InsideMicroscope
+  sceneToLoad: InsideMicroscope one
   loadScene: 0
   prevloadScene: 0
 --- !u!114 &753461669
